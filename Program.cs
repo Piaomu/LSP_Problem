@@ -6,6 +6,7 @@ namespace LSP_Problem
     {
         static void Main(string[] args)
         {
+            // Starting Five
             Player rooster = new Center();
             rooster.FirstName = "Foghorn";
             rooster.LastName = "Leghorn";
@@ -31,10 +32,14 @@ namespace LSP_Problem
             canary.LastName = "Bird";
             canary.ShouldPlay(2, 31);
 
+            // The Bench
             Player celebrity = new BillMurray();
             celebrity.FirstName = "Bill";
             celebrity.LastName = "Murray";
             celebrity.ShouldPlay(0, 0);
+
+            // Substitution throws an error
+            celebrity.Substitution(rabbit);
 
             Console.ReadLine();
         }
